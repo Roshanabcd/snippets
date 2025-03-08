@@ -4,7 +4,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import prisma from "@/lib/prisma";
 import { redirect } from "next/navigation";
-
+// import Error from "./error";
 const SnippetsPage = function () {
   async function createSnippets(FormData: FormData) {
     "use server";

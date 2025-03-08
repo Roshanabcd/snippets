@@ -1,7 +1,7 @@
 import prisma from "@/lib/prisma";
 import Link from "next/link";
 import { Button } from "../../../components/ui/button";
-import {deleteSnippet} from "@/action";
+// import {deleteSnippet} from "@/action";
 import * as actions from "@/action";
 import { notFound } from "next/navigation";
 const SnippetDetailspage =async ({params}:{params:Promise<{id:string}>}) => {
