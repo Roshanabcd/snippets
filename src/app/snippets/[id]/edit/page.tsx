@@ -8,9 +8,12 @@ const EditSnippetPage = async ({params}:{params:Promise<{id:string}>}) => {
             id,
         }
     })
+    if(!snippet){
+        return <div>Snippet not found</div>
+    }
     return (
         <div>
-            <EditSnippetForm />
+            <EditSnippetForm snippet={snippet} />
         </div>
     )
 }
